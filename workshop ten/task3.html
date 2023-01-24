@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(){
+        var p = document.getElementsByTagName("p")
+        console.log(p);
+
+       /* p[0].style.color = "blue";
+        p[1].style.fontWeight = "bold";
+        p[2].style.fontStyle = "italic";
+        p[3].style.fontSize = "25px";*/
+
+        var i;
+        for(i=0;i<p.length;i++){
+            p[i].style.color = "green";
+            p[i].style.fontWeight = "bold"
+        }
+        }
+    
+    </script>
+</head>
+<body>
+    <p>This is my First paragraph.</p>
+    <p>This is my second paragraph.</p>
+    <p>This is my third paragraph.</p>
+    <p>This is my fourth paragraph.</p>
+    <button onclick = "change()">Change Paragraph Style</button>
+</body>
+</html>

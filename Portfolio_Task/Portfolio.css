@@ -25,6 +25,13 @@ margin-top:auto;
     width:100%;
     padding: 15px 0;
     background: rgba(22, 21, 21, 0.562);
+
+    animation: MyAnimation-2;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
 }
 
 .navbar .max-width{
@@ -36,7 +43,7 @@ margin-top:auto;
 .navbar .menu a{
     font-size:30px;
     font-weight: 600;
-    color:cornflowerblue;
+    color: black;
     text-decoration :none;
 } 
 
@@ -50,19 +57,156 @@ margin-top:auto;
     font-weight: 500;
     margin-left: 25px;
 }
+
 .menu{
 display:flex;
 gap:30px;
 }
+
 .navbar .logo a{
     font-size:40px;
     font-weight:700;
     text-decoration:none;
 }
+
 .home-content {
+    font-weight: bold;
     display:flex;
     justify-content: center;
     align-items: center;
-
-    
+    width: 700px;
+    height: 900px;
 }
+.navbar{
+    animation: MyAnimation;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+
+@keyframes MyAnimation {
+from{margin-top:100%;
+opacity: -1;}
+to{margin-top: 0%;
+opacity: 1;}    
+}
+
+
+
+.home .first .home-content{
+    animation: MyAnimation-3;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+@keyframes MyAnimation-3 {
+    from{margin-left:10%;}
+    to{margin-left:50%;}     
+}
+
+.second{
+    text-align: center;
+   background-color: indigo;
+   height: 100vh;
+   font-weight: bold;
+}
+
+.third{
+    text-align: center;
+    background-color: dimgray;
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+      }
+      
+      h2 {
+        margin-bottom: 50px;
+      }
+      
+      ul {
+        list-style-type: none;
+        font-size: 20px;
+      }
+      
+      li {
+        margin-bottom: 20px;
+      }
+
+.fourth{
+    text-align: center;
+    background-color:mediumslateblue;
+}
+
+.fifth {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 50px;
+  }
+  
+  #social-media {
+    margin-bottom: 50px;
+  }
+  
+  #social-media a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  #social-media a:hover {
+    color: #ddd;
+  }
+
+  @media (max-width: 600px) {
+    .container .Home .About .Hobbies .Blog .Contact .social-media {
+      width: 100%;
+      display: block;
+    }
+  }

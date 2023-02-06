@@ -72,10 +72,11 @@ gap:30px;
 .home-content {
     font-weight: bold;
     display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
-    height: 900px;
+ justify-content: center;
+ align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-size:30px;
 }
 .navbar{
     animation: MyAnimation;
@@ -112,33 +113,42 @@ opacity: 1;}
     text-align: center;
    background-color: indigo;
    height: 100vh;
+   width:100%;
    font-weight: bold;
 }
+.second img{
+  height:300px;
+}
 
-.third{
+.Hobbies .third{
     text-align: center;
     background-color: dimgray;
-        width: 500px;
-        margin: 50px auto;
+        width: 100vw;
+        height:100vh;
+        margin: auto;
         text-align: center;
       }
       
       h2 {
-        margin-bottom: 50px;
+      
+        font-size: 40px;
       }
       
       ul {
         list-style-type: none;
-        font-size: 20px;
+        font-size: 30px;
       }
       
-      li {
-        margin-bottom: 20px;
+      .third li {
+        
+        margin-top: 4rem;
       }
 
 .fourth{
     text-align: center;
     background-color:mediumslateblue;
+    height:100vh;
+    width:100%;
 }
 
 .fifth {
@@ -198,15 +208,54 @@ opacity: 1;}
     font-size: 30px;
     margin-right: 10px;
     text-decoration: none;
+    transition: 0.2s linear;
   }
   
   #social-media a:hover {
-    color: #ddd;
+    font-size: 40px;
   }
 
   @media (max-width: 600px) {
-    .container .Home .About .Hobbies .Blog .Contact .social-media {
-      width: 100%;
-      display: block;
+    .container .navbar .max-width .menu {
+     display:flex;
+     flex-wrap: wrap;
+     font-size:10px;
+     gap:10px;
     }
+
+    .home .first .home-content{
+      animation: MyAnimation-3;
+      animation-play-state: running;
+      animation-iteration-count: 1;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-duration: 1s;
   }
+  @keyframes MyAnimation-3 {
+      from{margin-left:3%;}
+      to{margin-left:10%;}     
+  }
+  .home-content{
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.home-content div {
+  margin-left:2px;
+  flex-wrap: wrap;
+
+ padding-left: 2px;
+ font-size:20px
+}
+.About{
+  height:auto;
+}
+.About img{
+  height:250px;
+}
+.Hobbies{
+  margin-top: 0;
+}
+    }
